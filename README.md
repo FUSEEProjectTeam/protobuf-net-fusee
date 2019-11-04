@@ -1,3 +1,22 @@
+# protobuf-net-fusee
+
+Customized protobuf-net library used for Fusee v0.8. Build with protobuf-net.sln.
+
+Differences to original protobuf-net library:
+
+- Removed dependency System.ServiceModel.Primitives for netstandard2.0 and 2.1
+- Removed dependency System.ServiceModel for net461
+- Removed the classes which are dependent upon ServiceModel: `ProtoBehaviorAttribute.cs`, `ProtoEndpointBehavior.cs` and `ProtoOperationBehavior.cs`
+- Removed constant `FEAT_SERVICECONFIGMODEL`
+- Added constant `PLAT_NO_EMITDLL`
+   
+
+Reason for Modifications:
+
+- monolinker.exe fails during WebAsm build task with exception when ServiceModel is referenced as dependency, therefore: allow compilation of protobuf-net with WebAsm monolinker.exe web builds
+- Update to protobuf-net v3.0.0-alpha.*, with removed precompile.exe to achieve cleaner Fusee.sln for different operating systems
+
+
 # protobuf-net
 protobuf-net is a contract based serializer for .NET code, that happens to write data in the "protocol buffers" serialization format engineered by Google. The API, however, is very different to Google's, and follows typical .NET patterns (it is broadly comparable, in usage, to `XmlSerializer`, `DataContractSerializer`, etc). It should work for most .NET languages that write standard types and can use attributes.
 
