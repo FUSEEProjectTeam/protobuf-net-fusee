@@ -8,6 +8,9 @@
     <AssemblyName>protobuf-net.Core</AssemblyName>
     <Title>protobuf-net.Core</Title>
     <Description>Provides simple access to fast and efficient "Protocol Buffers" serialization from .NET applications</Description>
+    <PackageId>protobuf-net-fusee.Core</PackageId>
+    <RepositoryUrl>https://github.com/FUSEEProjectTeam/protobuf-net-fusee</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/FUSEEProjectTeam/protobuf-net-fusee</PackageProjectUrl>
     <!--<DefineConstants>$(DefineConstants);TRACK_USAGE</DefineConstants>-->
   </PropertyGroup>
   
