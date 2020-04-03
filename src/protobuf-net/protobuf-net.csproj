@@ -13,6 +13,7 @@
     <RepositoryUrl>https://github.com/FUSEEProjectTeam/protobuf-net-fusee</RepositoryUrl>
     <Product>protobuf-net-fusee (net461)</Product>
     <PackageId>protobuf-net-fusee</PackageId>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   
   <!-- define configuration per-platform -->
